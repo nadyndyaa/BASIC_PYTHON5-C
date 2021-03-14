@@ -43,30 +43,34 @@
 
 #MEMBUAT LIST
 #append --> menambah data
-""" buah = ["Apel","Pisang"]
-print(buah[0])
-print(buah[1])
-buah.append("Anggur")
-print(buah) """
+#buah = ["Apel","Pisang"]
+#print(buah[0])
+#print(buah[1])
+#buah.append("Anggur")
+#print(buah)
 
 #Condition
-""" a = 20
-b = 20
-if a > b:
-    print("a lebih besar dari b")
-elif a == b:
-    print(" a sama dengan b")
-else:
-    print("b lebih besar dari a") """
+#a = 20
+#b = 20
+#if a > b:
+    #print("a lebih besar dari b")
+#elif a == b:
+    #print(" a sama dengan b")
+#else:
+    #print("b lebih besar dari a") """
 
-a = 20
-b = 80
-""" if a == 20 and b == 50: #kondisi 1
-    print("benar")
-else:
-    print("salah") """ 
+#a = 20
+#b = 80
 
-if not b<a:
-    print("benar")
-    else:
-        print("salah")
+#if a == 20 and b == 50: #kondisi 1
+    #print("benar")
+    #else:
+    #print("salah")
+
+#if not b<a:
+    #print("benar")
+    #else:
+        #print("salah") """
+
+
+
