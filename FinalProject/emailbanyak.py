@@ -1,24 +1,21 @@
-from mailmerge import MailMerge
-data = read_excel('C:/Users/Nadya Wardah Budiman/Documents/IndonesiaAI/BASIC_PYTHON5-C/FinalProject/data email.xlsx').astype('str')
+import pandas as pd 
+import smtplib
 
-# email pengirim
-dari = "nadya.wardah@gmail.com"
+e = pd.read_excel("email.xlsx")
+email = e['email'].values
 
-# judul atau subject
-judul = "coba kirim ke banyak"
+print(email)
 
-# isi password
-password = "nadyacantik6"
+server = smtplib.SMTP ("smtp.gmail.com",587)
+server.starttls()
+server.login("nadya.wardah@gmail.com", "nadyacantik6")
+msg ="HAI"
 
-for i in range(len(data)):
-    
-    kepada    = data["email"][i]
-    isi_pesan = '''
-Halo ''' + data["nama"][i] + ''',
-Apa kabar? ini coba kirim email ke banyak orang heheheee
-Semoga rapih
-heheehheeheh
-ok
-mantappp.'''
-    
-    kirim_email(dari,kepada,judul,isi_pesan,password)
+
+subject ="Hello"
+body = "Subject: {}\n\n{}".format(subject,msg)
+for email in email:
+    server.sendmail("nadya.wardah@gmail.com", email, body)
+server.quit()
+
+# https://www.youtube.com/watch?v=qHyE4YAFIv0
