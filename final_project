@@ -8,14 +8,14 @@ print(email)
 
 server = smtplib.SMTP ("smtp.gmail.com",587)
 server.starttls()
-server.login("nadya.wardah@gmail.com", "nadyacantik6")
+server.login("xxxx@gmail.com", "xxxxx")
 msg ="HAI"
 
 
 subject ="Hello"
 body = "Subject: {}\n\n{}".format(subject,msg)
 for email in email:
-    server.sendmail("nadya.wardah@gmail.com", email, body)
+    server.sendmail("xxxx@gmail.com", email, body)
 server.quit()
 
 # https://www.youtube.com/watch?v=qHyE4YAFIv0
