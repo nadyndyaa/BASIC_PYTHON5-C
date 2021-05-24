@@ -19,14 +19,14 @@ def kirim_email(dari,kepada,judul,isi_pesan,password):
     server.sendmail(dari, kepada, text)
     server.quit()
     
-dari      = "nadya.wardah@gmail.com"       # email pengirim
-kepada    = "nadya.wardah@gmail.com"       # email penerima
+dari      = "xxxx@gmail.com"       # email pengirim
+kepada    = "nxxxh@gmail.com"       # email penerima
 judul     = "coba"       # judul atau subject
 isi_pesan = '''
 coba
 aja 
 '''   # isi pesan atau body
-password  = "nadyacantik6"       # isi password
+password  = "xxxx"       # isi password
 
 # menjalankan fungsi kirim email
 kirim_email(dari,kepada,judul,isi_pesan,password) 
