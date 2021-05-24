@@ -29,10 +29,10 @@ def kirim_email_df(dari,kepada,judul,isi_pesan,fname,fdir,password):
 # buat variabel parameter dari, kepada, judul, isi_pesan, fname, fdir, password
 
 # email pengirim
-dari = "nadya.wardah@gmail.com"
+dari = "xxxx@gmail.com"
 
 # email penerima
-kepada = "nadya.wardah@gmail.com"
+kepada = "xxxx@gmail.com"
 
 # judul atau subject
 judul = "Coba ada file"
@@ -49,7 +49,7 @@ fname     = "timeline_20191025_175132.jpg"
 fdir = "C:/Users/Nadya Wardah Budiman/Pictures/kamis fikti/"
 
 # isi password
-password = "nadyacantik6"
+password = "xxxx"
 
 # menjalankan fungsi kirim email dengan file
 kirim_email_df(dari,kepada,judul,isi_pesan,fname,fdir,password)
